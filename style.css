@@ -516,6 +516,10 @@ object-fit: cover;
   transition: all 0.2s linear;
   column-width: 100%;
 }
+
+.card_input p{
+  font-size: 1.5rem;
+}
 .input_container{
   margin-left: 10px;
   width: 100%;
