@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+  @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,100&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -225,7 +229,11 @@ color:#822d8b;
   background-color: red;
   align-items: end;
 }
-
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .container.intro h1 {
   /* font-family: "Roboto"; */
   font-size: 4rem;
@@ -244,7 +252,60 @@ color:#822d8b;
   background-size: contain;
   z-index: 0;
 }
+.doc_bg {
+  display: flex;
+  flex-direction: column;
+  background-color: #afa5b6;
+  background-image: url(./img/IMG_0859.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+ justify-content: flex-end;
+  background-size: contain;
+  align-items: flex-end;
+  z-index: 0;
+  height: 110vh;
+  width: 100%;
+ 
+  text-align: center;
+}
+.transparent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  height: 60%;
+  padding-bottom: 3rem;
+  align-items: center;
+  background: linear-gradient(to top, rgba(2, 2, 2, 0.85), transparent);
 
+}
+.transparent h3 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-style: italic;
+  width: 60%;
+ 
+}
+.transparent ul{
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  list-style: none;
+}
+
+.transparent li{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  /* color: #ff85e1; */
+  color: white;
+}
 /* text size */
 
 h2 {
@@ -365,25 +426,38 @@ img {
 .boxy {
   display: flex;
   flex-direction: column;
-  height: 250px;
-  
-  color: white;
- /* justify-content: center; */
- padding-top: 3rem;
-margin-left: -70px;
-background-color: #BC74A5;
-  margin-top: 5rem;
+  color: black;
+ padding: 3rem;
+transition: all 7s;
   text-align: center;
-  width: 500px;
-  border-top-right-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+ width: 100%;
   
 }
-
 .boxy h2 {
-  color: white;
-  font-size: 32px;
+  color:#822d8b;
+  font-size: 3rem;
   font: "Open Sans";
+}
+
+.boxy h3 {
+  color: black;
+  font-size: 1.3rem;
+  font: "Open Sans";
+  font-weight: lighter;
+}
+
+.boxy h4{
+  font-size: 1.6rem;
+}
+
+.boxy li{
+  text-align: left;
+  font-size: 1.3rem;
+}
+.boxy .big_hyphen{
+  font-size: 2.5rem;
+  color:#822d8b;
+ margin: 0 5px
 }
 
 .end {
@@ -409,7 +483,7 @@ background-color: #BC74A5;
   margin: 2px;
   padding: 0;
   text-align: left;
-  transition: all 0.2s linear;
+  transition: all 3s;
   column-width: 100%;
 }
 
@@ -456,6 +530,8 @@ object-fit: cover;
   font-size: 2rem;
   color: #1055AF;
   border-bottom: 2px solid #e0e0e2;
+  margin-top: 20px;
+ 
 }
 
 .cas{
