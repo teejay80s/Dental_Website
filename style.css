@@ -181,7 +181,7 @@ header a {
 }
 
 .half  h2 {
-margin-top: 7rem;
+margin-top: 12rem;
 color:#822d8b;
 
 }
@@ -210,7 +210,7 @@ color:#822d8b;
 }
 
 .intro {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   color: #ffffff;
@@ -236,7 +236,7 @@ color:#822d8b;
 }
 .container.intro h1 {
   /* font-family: "Roboto"; */
-  font-size: 4rem;
+  font-size: 3rem;
   color: #1055AF;
   font-weight: 900;
   margin-top: 2rem;
@@ -281,12 +281,12 @@ color:#822d8b;
 }
 .transparent h3 {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   text-align: center;
   font-family: 'Bitter', serif;
   font-style: italic;
-  width: 60%;
+  width: 80%;
  
 }
 .transparent ul{
@@ -314,6 +314,9 @@ color:#822d8b;
   padding: 5% 5%;
   font-family: 'Bitter', serif;
   height: 60vh;
+}
+.about_us h1{
+  margin-top: -5px;
 }
 
 .dark{
@@ -454,7 +457,7 @@ img {
   display: flex;
   flex-direction: column;
   color: black;
- padding: 3rem;
+ padding: 1rem;
 transition: all 7s;
   text-align: center;
  width: 100%;
@@ -462,7 +465,7 @@ transition: all 7s;
 }
 .boxy h2 {
   color:#822d8b;
-  font-size: 3rem;
+ margin-top: 0;
   font: "Open Sans";
 }
 
@@ -507,7 +510,7 @@ transition: all 7s;
 }
 
 .avi{
-  height: 300px;
+  height: 280px;
   width: 100%;
  filter: brightness(80%);
 }
@@ -519,11 +522,11 @@ transition: all 7s;
 }
 .avi_info{
   display: flex;
-  height: 250px;
-  padding: 5%;
- 
+  height: 220px;
+  
+  padding: 4%;
   background-color:#d481ba;
-  color: white;
+ 
  width: 100%;
  flex-direction: column;
  
@@ -532,20 +535,37 @@ transition: all 7s;
   margin-top: 5px;
   font-size: 22px;
   text-align: center;
-  color: white;
+ 
   display: flex;
   margin-bottom:5px;
 }
 .avi_info p{
   /* color: white; */
-  font-size: 16px;
+  font-size: 12px;
   margin-bottom: -2px;
-  font-family: 'Bitter', serif;
+  text-align: center;
+  font-family: 'open sans';
 }
  .avi_info .bold{
-  font-size: 18px;
-  font-weight: 2rem;
-  color: white;
+  font-weight: 900;
+  color: black;
+}
+.avi_info ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+  justify-content: center;
+  
+}
+
+.avi_info li{
+  margin-right:1.5rem;
+}
+
+.avi_info a{
+  color: rgb(0, 0, 0);
 }
 .card {
   display: flex;
@@ -573,11 +593,7 @@ transition: all 7s;
   padding: 0;
   text-align: left;
 }
-.card_input img{
-height: 500px;
-width: 100%;
-object-fit: cover;
-}
+
 
 
 .card_input {
@@ -592,6 +608,7 @@ object-fit: cover;
   text-align: left;
   transition: all 0.2s linear;
   column-width: 100%;
+ 
 }
 
 .card_input p{
@@ -611,7 +628,7 @@ object-fit: cover;
   font-size: 2rem;
   color: #1055AF;
   border-bottom: 2px solid #e0e0e2;
-  margin-top: 20px;
+  margin-top: 10px;
  
 }
 
@@ -621,8 +638,8 @@ object-fit: cover;
   font-weight: bold;
   font-size: 2.5rem;
   color:#822d8b;
-  margin-top: 3rem;
-  width:60%;
+  /* margin-top: 3rem; */
+  width:80%;
  
 }
 .half_btn{
@@ -634,13 +651,15 @@ object-fit: cover;
 .small_p {
   text-align: center;
   padding: 1rem;
-  width: 80%;
+  
   font-size: 18px;
 }
  
 .doc_pic{
-  background-color: blue;
-  height: 500px;
+  margin-top: .5rem;
+  width: 100%;
+  height: 400px;
+  
   
 }
 .doc_pic img{
@@ -725,6 +744,7 @@ object-fit: cover;
   margin-bottom: 0;
   width: 60%;
 }
+
 .stencil {
   width: 75%;
 }
@@ -932,9 +952,11 @@ input {
     font-size: 14px;
     text-align: center;
   }
-  .box {
-    align-items: center;
-    padding-bottom: 2.5rem;
+  
+  .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
   .box h2 {
     margin-top: 0;
